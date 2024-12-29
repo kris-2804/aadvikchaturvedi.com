@@ -12,7 +12,7 @@ export default function Home() {
       <div className="text-center">
       <VideoPlayer src={'https://vimeo.com/1042715104?share=copy#t=0'} Muted={false} isFullWidth={true}/>
 
-        <h1 className="text-6xl font-bold mb-8 bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent mt-8 sm:mt-4">
+        <h1 className="text-6xl sm:text-3xl font-bold mb-8 bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent mt-8 sm:mt-4">
           AADVIK CHATURVEDI
         </h1>
         {/* <ThreeDText  /> */}
