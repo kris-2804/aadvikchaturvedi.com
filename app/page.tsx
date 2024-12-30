@@ -4,24 +4,25 @@ import TypingAbout from './typingabout';
 import GridLayout from './grid';
 import ThreeDText from './ThreeDText';
 import VideoPlayer from './videocomponent';
-
+import Corousle from './corouselcomponent';
 export default function Home() {
   
   return (
     <div className="min-h-screen bg-background">
       <div className="text-center">
-      <VideoPlayer src={'https://vimeo.com/1042715104?share=copy#t=0'} Muted={false} isFullWidth={true}/>
+      <VideoPlayer src={'/MITMakerPortfolio.mp4'} Muted={false} isFullWidth={true}/>
 
-        <h1 className="text-6xl sm:text-3xl font-bold mb-8 bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent mt-8 sm:mt-4">
+        <h1 className="text-5xl  font-bold mb-8 bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent mt-8 sm:mt-4">
           AADVIK CHATURVEDI
         </h1>
-        {/* <ThreeDText  /> */}
-        <TypingAbout speed={60} text={'DEVELOPER & CREATIVE TECHNOLOGIST'} />
+        
+        <TypingAbout speed={60} text={'A CURIOUS PROBLEMSOLVER'} />
       </div>
 
       <GridLayout/> 
       
-
+      <Corousle/>
+      
       <footer className="text-center pb-4 pt-12">
         <p className="text-sm text-gray-500">&copy; {new Date().getFullYear()} Aadvik Chaturvedi. All rights reserved.</p>
         <div className="flex justify-center space-x-4 mt-2">

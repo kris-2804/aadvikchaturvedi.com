@@ -62,14 +62,14 @@ const Home = () => {
             className="w-full md:w-auto" 
           />
           <Category 
-            emoji="🎭" 
-            title="Performances" 
-            onClick={() => openCategoryModal("performances")}
+            emoji="🤝" 
+            title="Leadership" 
+            onClick={() => openCategoryModal("leadership")}
             className="w-full md:w-auto" 
           />
           <Category 
             emoji="💡" 
-            title="Innovations" 
+            title="Research" 
             onClick={() => openCategoryModal("innovations")}
             className="w-full md:w-auto" 
           />
@@ -79,12 +79,13 @@ const Home = () => {
             onClick={() => openCategoryModal("projects")}
             className="w-full md:w-auto" 
           />
-          <Category 
-            emoji="🤝" 
-            title="Collaborations" 
-            onClick={() => openCategoryModal("collaborations")}
+           <Category 
+            emoji="🎭" 
+            title="Performances" 
+            onClick={() => openCategoryModal("performances")}
             className="w-full md:w-auto" 
           />
+         
         </div>
       </div>
 

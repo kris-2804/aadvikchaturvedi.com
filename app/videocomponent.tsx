@@ -93,6 +93,7 @@ const VideoPlayer = ({src, Muted=false, isFullWidth=false}) => {
           onLoadedData={handleLoadedData}
           playsInline
           autoPlay
+          loop
           muted
           src={src}
         />
