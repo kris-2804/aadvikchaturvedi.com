@@ -4,8 +4,14 @@ import TypingAbout from './typingabout';
 import GridLayout from './grid';
 import ThreeDText from './ThreeDText';
 import VideoPlayer from './videocomponent';
-import Corousle from './corouselcomponent';
+import  { EmblaOptionsType } from 'embla-carousel';
+import EmblaCarousel from './EmblaCarousel';
+
+
 export default function Home() {
+  const OPTIONS: EmblaOptionsType = { loop: true }
+const SLIDE_COUNT = 12
+const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
   
   return (
     <div className="min-h-screen bg-background">
@@ -21,7 +27,8 @@ export default function Home() {
 
       <GridLayout/> 
       
-      <Corousle/>
+      <EmblaCarousel slides={SLIDES} options={OPTIONS} />
+      
       
       <footer className="text-center pb-4 pt-12">
         <p className="text-sm text-gray-500">&copy; {new Date().getFullYear()} Aadvik Chaturvedi. All rights reserved.</p>

@@ -43,18 +43,18 @@ const Card: React.FC<CardProps> = ({
   switch (category) {
     case 'projects':
       return (
-        <div className="border border-gray-300 rounded-lg p-6 max-w-xl mx-auto bg-white">
+        <div className="border border-gray-300 rounded-lg p-6 max-w-xl  md:max-w-3xl mx-auto bg-white">
           <h2 className="text-2xl font-semibold text-center mb-6">Projects</h2>
           
-          {/* First Project */}
+          {/* First Project */} 
           <div className="mb-8">
-            <h3 className="text-xl font-semibold mb-3">A Homemade fidget spinner</h3>
+            <h3 className="text-xl md:text-2xl font-semibold mb-3">A Homemade fidget spinner</h3>
             <VideoPlayer 
               src={'/FidgetSprinner Toy creation.mp4'} 
               className="w-full rounded-lg mb-4"
             />
-            <p className="text-sm text-gray-600 text-justify mb-4">
-              Fidget Spinner I created recycling old toys and household waste
+            <p className="text-sm md:text-xl text-gray-600 text-justify mb-4">
+            Fidget Spinner I created using bottle caps, coins, an old top toy, and tape
             </p>
           </div>
 
@@ -63,13 +63,13 @@ const Card: React.FC<CardProps> = ({
 
           {/* Second Project */}
           <div>
-            <h3 className="text-xl font-semibold mb-3">{projectTitle2}</h3>
+            <h3 className="text-xl md:text-2xl font-semibold mb-3">Blow Gun</h3>
             <VideoPlayer 
               src={'/ToyforSelf.mp4'} 
               className="w-full rounded-lg mb-4"
             />
-            <p className="text-sm text-gray-600 text-justify">
-            Toys I created recycling old toys and household waste
+            <p className="text-sm text-gray-600 text-justify md:text-xl">
+            Blow gun I created from straws, rubber band and an old gun when I ran out of darts.
             </p>
           </div>
         </div>
@@ -77,9 +77,9 @@ const Card: React.FC<CardProps> = ({
 
     case 'ventures':
       return (
-        <div className="border border-gray-300 rounded-lg p-6 max-w-2xl mx-auto bg-white">
+        <div className="border border-gray-300 rounded-lg p-6 max-w-2xl md:max-w-5xl mx-auto bg-white md:min-h-80 ">
           <h2 className="text-2xl font-semibold text-center mb-6">Entrepreneurial Ventures:</h2>
-          <div className="flex justify-between gap-6 ">
+          <div className="flex justify-between gap-6 min-w-3xl">
             <div className="text-center w-1/2">
               <img 
                 src={'/wisepallogo.png'} 
@@ -88,7 +88,7 @@ const Card: React.FC<CardProps> = ({
                 width={128} 
                 height={128} 
               />
-              <p className="mt-3 text-sm text-gray-600">{'Wisepal'}</p>
+              <p className="mt-3 text-sm md:text-2xl text-gray-600">{'Wisepal'}</p>
               <a 
                 href={'https://wisepal.me/'} 
                 target="_blank" 
@@ -97,7 +97,7 @@ const Card: React.FC<CardProps> = ({
               >
                 Wisepal.me
               </a>
-              <p className="mt-3 text-sm text-gray-600 text-justify">
+              <p className="mt-3 text-sm md:text-xl text-gray-600 text-justify">
                 WisePal is an AI-powered proctoring and remote assessments platform I co-founded during the COVID-19 pandemic. Initially conceptualized as a quizbot, it evolved into a robust tool used by 73+ institutions to conduct over 300,000 fair and secure exams.
               </p>
             </div>
@@ -109,7 +109,7 @@ const Card: React.FC<CardProps> = ({
                 width={128} 
                 height={128} 
               />
-              <p className="mt-3 text-sm text-gray-600">{'Schola'}</p>
+              <p className="mt-3 text-sm md:text-2xl text-gray-600">{'Schola'}</p>
               <a 
                 href={'https://www.scholaisfun.com/'} 
                 target="_blank" 
@@ -118,7 +118,7 @@ const Card: React.FC<CardProps> = ({
               >
                 scholaisfun.com
               </a>
-              <p className="mt-3 text-sm text-gray-600 text-justify">
+              <p className="mt-3 text-sm md:text-xl text-gray-600 text-justify">
                 Schola is a mentorship platform I co-founded to bridge the gap between aspiring students and their dream universities. Schola connects students with mentors who provide personalized guidance on applications, essays, and interviews. It has 150+ mentors from T50s.
               </p>
             </div>
@@ -129,22 +129,22 @@ const Card: React.FC<CardProps> = ({
     // ... rest of the cases remain the same ...
     case 'performances':
       return (
-        <div className="border border-gray-300 rounded-lg p-6 max-w-xl mx-auto bg-white">
+        <div className="border border-gray-300 rounded-lg p-6 max-w-xl md:max-w-3xl  mx-auto bg-white">
           <h2 className="text-2xl font-semibold text-center mb-6">Stand up</h2>
-          <p className="text-sm text-gray-600 text-justify mb-4">Fun and joy</p>
+          <p className="text-sm md:text-xl text-gray-600 text-justify mb-4">Showcasing my comedic flair, I delivered a lively stand-up performance filled with witty observations and relatable humor</p>
           <VideoPlayer src={'/aadvik-standup.mp4'} />
         </div>
       );
 
     case 'innovations':
       return (
-        <div className="border border-gray-300 rounded-lg p-6 max-w-xl mx-auto bg-white">
+        <div className="border border-gray-300 rounded-lg p-6 max-w-xl md:max-w-3xl mx-auto bg-white">
           <h2 className="text-2xl font-semibold text-center mb-6">Research Papers: </h2>
          
           <div className="mb-6">
-            <h3 className="text-xl font-semibold mb-2">VARIATION IN PROSODIC SIGNATURE WITH COGNITIVE LOAD</h3>
-            <p className="text-sm text-gray-600 mb-4">
-              Presented at the ARSSS International Conference, Won Best Research Award
+            <h3 className="text-xl md:text-3xl  font-semibold mb-2">VARIATION IN PROSODIC SIGNATURE WITH COGNITIVE LOAD</h3>
+            <p className="text-sm md:text-lg text-gray-600 mb-4">
+              Presented at the ARSSS International Conference.
             </p>
             <div className="border border-gray-300 rounded-lg p-4 bg-gray-50">
               <h4 className="text-lg font-medium mb-2">Project PDF:</h4>
@@ -170,29 +170,29 @@ const Card: React.FC<CardProps> = ({
 
     case 'leadership':
       return (
-        <div className="border border-gray-300 rounded-lg p-6 max-w-xl mx-auto bg-white ">
+        <div className="border border-gray-300 rounded-lg p-6 max-w-xl md:max-w-5xl mx-auto bg-white ">
           <h2 className="text-2xl font-semibold text-center mb-6">Leadership and Social Work</h2>
           <div className="flex justify-between gap-6 flex-col">
             <div className="w-full">
-              <h3 className="text-xl font-semibold mb-2">Headboy at school</h3>
+              <h3 className="text-xl md:text-2xl font-semibold mb-2">Headboy at school</h3>
               <div className="grid grid-cols-2 gap-4 mb-4">
                 <img 
                   src={'/aadvikasheadboy.jpg'} 
                   alt="Leadership Photo 1" 
-                  className="w-full h-40 object-cover rounded-lg"
+                  className="w-full h-full object-cover rounded-lg"
                 />
                 <VideoPlayer
                   src={'/aadvikasheadboyspeech.mp4'} 
                   className="w-full h-40 object-cover rounded-lg"
                 />
               </div>
-              <p className="text-sm text-gray-600 text-justify">
+              <p className="text-sm md:text-xl text-gray-600 text-justify">
                 I was elected as Headboy to lead the Student Senate and represent the student body. In this role, I organized major school events, bridged communication between students and faculty, and championed initiatives for a more inclusive and engaging school environment. This opportunity enhanced my leadership, teamwork, and decision-making skills, allowing me to drive meaningful change within the school community.
               </p>
             </div>
             <div className="w-full">
               <h3 className="text-xl font-semibold mb-2">Social Work @ Gurukul:</h3>
-              <p className="text-sm text-gray-600 text-justify">
+              <p className="text-sm text-gray-600 md:text-xl text-justify">
                 At Gurukul, I volunteered to educate underprivileged children, focusing on foundational skills in math and general knowledge. I incorporated storytelling and humor to make learning engaging, fostering curiosity and confidence among students.
               </p>
             </div>
@@ -202,7 +202,7 @@ const Card: React.FC<CardProps> = ({
       
     default:
       return (
-        <div className="border border-gray-300 rounded-lg p-6 max-w-xl mx-auto bg-white">
+        <div className="border border-gray-300 rounded-lg p-6 max-w-xl md:max-w-3xl mx-auto bg-white">
           <h2 className="text-2xl font-semibold text-center mb-6">{title}</h2>
           <div className="flex justify-between gap-6">
             <div className="text-center w-1/2">
